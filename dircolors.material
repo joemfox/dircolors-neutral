@@ -238,6 +238,12 @@ EXEC 00;32
 .djvu 00;36
 .epub 00;36
 
+# spreadsheet formats
+.xlsx 00;34
+.xls 00;34
+.ods 00;34
+
+
 # other
 .log  01;30
 .zwc  01;30
@@ -269,6 +275,8 @@ EXEC 00;32
 .ts 00;31
 .tsx 00;31
 .coffee 00;31
+
+.php 00;35
 
 # styles
 .css 00;32
