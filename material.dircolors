@@ -292,6 +292,8 @@ EXEC 00;32
 
 # templates
 .html 00;33
+.htm 00;33
+.hjs 00;33
 .haml 00;33
 .slim 00;33
 .erb 00;33
