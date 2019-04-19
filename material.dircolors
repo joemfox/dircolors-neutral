@@ -236,8 +236,9 @@ EXEC 00;32
 .odt 00;36
 
 # presentation formats
-.ppt 00;36
-.pptx 00;36
+.ppt 00;33
+.pptx 00;33
+.odp 00;33
 
 # book formats
 .pdf 00;36
@@ -307,6 +308,11 @@ EXEC 00;32
 .md 00;34
 .markdown 00;34
 
+# configs
+.cfg 00;36
+.ini 00;36
+
+
 # packages
 
 *package.json 00;35
@@ -332,3 +338,4 @@ EXEC 00;32
 .zwc  01;30
 .log  01;30
 .lock 01;30
+.o 01;30
