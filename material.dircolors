@@ -104,6 +104,7 @@ EXEC 00;32
 .sh 00;32
 .csh 00;32
 .zsh 00;32
+.class 00;32
 
  # archives or compressed
 .tar 00;31
