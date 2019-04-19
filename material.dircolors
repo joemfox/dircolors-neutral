@@ -232,8 +232,13 @@ EXEC 00;32
 # document formats
 .doc 00;36
 .docx 00;36
+.odt 00;36
+
+# presentation formats
 .ppt 00;36
 .pptx 00;36
+
+# book formats
 .pdf 00;36
 .djvu 00;36
 .epub 00;36
