@@ -249,12 +249,9 @@ EXEC 00;32
 .xls 00;34
 .ods 00;34
 
-
-# other
-.log  01;30
-.zwc  01;30
-.log  01;30
-.lock 01;30
+# Encrypted and keys
+.gpg 00;31
+.pgp 00;31
 
 
 
@@ -314,3 +311,16 @@ EXEC 00;32
 *Gemfile 00;35
 *Rakefile 00;35
 *Makefile 00;35
+
+
+# special files
+*id_rsa       01;30
+*id_rsa.pub   01;30
+*known_hosts  00;34
+
+
+# other
+.log  01;30
+.zwc  01;30
+.log  01;30
+.lock 01;30
