@@ -264,6 +264,7 @@ EXEC 00;32
 .go 00;35
 .rs 00;35
 .java 00;35
+.pas 00;35
 
 # intrpretable
 .py 00;36
@@ -295,6 +296,7 @@ EXEC 00;32
 .haml 00;33
 .slim 00;33
 .erb 00;33
+.jade 00;33
 
 # data
 .csv 00;34
@@ -317,6 +319,12 @@ EXEC 00;32
 *id_rsa       01;30
 *id_rsa.pub   01;30
 *known_hosts  00;34
+
+
+# databases
+.db   01;30
+.sqlite   01;30
+.sqlite3   01;30
 
 
 # other
