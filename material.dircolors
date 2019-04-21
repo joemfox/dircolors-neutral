@@ -253,6 +253,7 @@ EXEC 00;32
 # Encrypted and keys
 .gpg 00;31
 .pgp 00;31
+.kbx 00;31
 
 
 
