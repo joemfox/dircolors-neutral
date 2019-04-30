@@ -163,6 +163,7 @@ EXEC 00;32
 .mjpg 00;35
 .mjpeg 00;35
 .gif 00;35
+.webp 00;35
 .bmp 00;35
 .pbm 00;35
 .pgm 00;35
