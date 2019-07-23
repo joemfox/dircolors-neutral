@@ -212,6 +212,9 @@ EXEC 32
 .emf 34
 .ogv 34
 .ogx 34
+.3gp 34
+.3gp2 34
+.3gpp 34
 
 # audio formats
 .aac 36
@@ -237,9 +240,9 @@ EXEC 32
 .odt 36
 
 # presentation formats
-.ppt 00;33
-.pptx 00;33
-.odp 00;33
+.ppt 33
+.pptx 33
+.odp 33
 
 # book formats
 .pdf 36
@@ -261,85 +264,85 @@ EXEC 32
 ## source formats
 
 # compilable
-.c 35
-.h 35
-.cpp 35
-.go 35
-.rs 35
-.java 35
-.pas 35
+.c     35
+.h     35
+.cc    35
+.cpp   35
+.go    35
+.rs    35
+.java  35
+.pas   35
 
 # intrpretable
-.py 36
-.rb 36
-.ru 36
-.py 36
-.lua 36
+.py    36
+.rb    36
+.ru    36
+.py    36
+.lua   36
 
 # scripts
-.js 31
-.jsx 31
-.ts 31
-.tsx 31
-.coffee 31
+.js        31
+.jsx       31
+.ts        31
+.tsx       31
+.coffee    31
 
-.php 35
+.php       35
 
 # styles
-.css 32
-.sss 32
-.less 32
-.scss 32
-.sass 32
+.css     32
+.sss     32
+.less    32
+.scss    32
+.sass    32
 
 # templates
-.html 00;33
-.htm 00;33
-.hjs 00;33
-.haml 00;33
-.slim 00;33
-.erb 00;33
-.jade 00;33
+.html    33
+.htm     33
+.hjs     33
+.haml    33
+.slim    33
+.erb     33
+.jade    33
 
 # data
-.csv 34
-.json 34
-.yml 34
-.yaml 34
-.xml 34
-.md 34
-.markdown 34
+.csv          34
+.json         34
+.yml          34
+.yaml         34
+.xml          34
+.md           34
+.markdown     34
 
 # configs
-.cfg 36
-.ini 36
+.cfg          36
+.ini          36
 
 
 # packages
 
-*package.json 35
-*Gemfile 35
-*Rakefile 35
-*Makefile 35
+*package.json    35
+*Gemfile         35
+*Rakefile        35
+*Makefile        35
 
 
 # special files
-*id_rsa       01;30
-*id_rsa.pub   01;30
-*known_hosts  34
+*id_rsa         01;30
+*id_rsa.pub     01;30
+*known_hosts    34
 
 
 # databases
-.db   01;30
-.sqlite   01;30
-.sqlite3   01;30
+.db          01;30
+.sqlite3     01;30
 
 
 # other
-.log      37
-.zwc      37
-.log      37
-.lock     37
-.old      37
-.o        37
-*~        37
+.log          37
+.zwc          37
+.log          37
+.lock         37
+.old          37
+.o            37
+*~            37
