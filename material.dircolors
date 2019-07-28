@@ -164,6 +164,7 @@ EXEC 32
 .mjpeg 35
 .gif 35
 .webp 35
+.wma 35
 .bmp 35
 .pbm 35
 .pgm 35
@@ -183,6 +184,7 @@ EXEC 32
 
 # video formats
 .mov 34
+.movie 34
 .mpg 34
 .mpeg 34
 .m2v 34
@@ -260,6 +262,11 @@ EXEC 32
 .pgp 31
 .kbx 31
 
+# Other formats 
+
+.ttf   33
+.woff  33
+.woff2 33
 
 
 ## source formats
@@ -286,6 +293,12 @@ EXEC 32
 
 .lua   34
 
+.lua   35
+
+.xlt   32
+
+.xlt   34
+
 .js        33
 .jsx       33
 .ts        33
@@ -301,13 +314,14 @@ EXEC 32
 .sass    32
 
 .html    34
+.xhtml   34
 .htm     34
 .hjs     34
 .haml    34
 .slim    34
 .erb     34
 .jade    34
-.pug    34
+.pug     34
 
 
 .csv          32
@@ -320,6 +334,8 @@ EXEC 32
 
 .md           31
 .markdown     31
+
+.latex        35
 
 # configs
 .cfg          36
@@ -342,6 +358,10 @@ EXEC 32
 # databases
 .db          35
 .sqlite3     35
+
+# Libs
+.so  34
+.dll 34
 
 # other
 .log          37
