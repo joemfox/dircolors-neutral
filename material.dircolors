@@ -273,6 +273,7 @@ EXEC 33
 
 .c     34
 .h     34
+.hpp   34
 .cc    34
 .cpp   34
 
@@ -329,6 +330,9 @@ EXEC 33
 
 .vue     36
 
+.vue     31
+
+.scala     31
 
 .csv          32
 
