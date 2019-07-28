@@ -299,6 +299,9 @@ EXEC 33
 
 .xlt   34
 
+.groovy    36
+.dsl       36
+
 .js        33
 .jsx       33
 .ts        33
@@ -312,6 +315,7 @@ EXEC 33
 .less    32
 .scss    32
 .sass    32
+.stylus  32
 
 .html    34
 .xhtml   34
@@ -322,6 +326,8 @@ EXEC 33
 .erb     34
 .jade    34
 .pug     34
+
+.vue     36
 
 
 .csv          32
@@ -337,21 +343,26 @@ EXEC 33
 
 .latex        35
 
-# configs
+# Configs
 .cfg          36
 .conf         36
 .ini          36
 
-# packages
+# Special configs 
 *package.json    35
 *Gemfile         35
 *Rakefile        35
 *Makefile        35
 
+.babelrc         33
+.babel.js        33
+.babelrc.js      33
+.babel.json      33
+.babelrc.json    33
 
 # special files
-*id_rsa         01;30
-*id_rsa.pub     01;30
+*id_rsa         30
+*id_rsa.pub     30
 *known_hosts    34
 
 
