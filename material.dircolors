@@ -357,6 +357,9 @@ EXEC 33
 *babel.json       33
 *babelrc.json     33
 
+*.eslintrc        34
+*.eslintrc.js     34
+*.eslintrc.json   34
 
 *bower.json       33
 
