@@ -300,6 +300,8 @@ EXEC 33
 
 .xlt   34
 
+.sql   34
+
 .groovy    36
 .dsl       36
 
@@ -309,7 +311,7 @@ EXEC 33
 .tsx       33
 .coffee    33
 
-.php       35
+.php       34
 
 .css     32
 .sss     32
