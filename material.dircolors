@@ -35,31 +35,13 @@ TERM linux-c
 TERM mach-color
 TERM mlterm
 TERM putty
-TERM rxvt
-TERM rxvt-256color
-TERM rxvt-cygwin
-TERM rxvt-cygwin-native
-TERM rxvt-unicode
-TERM rxvt-unicode-256color
-TERM rxvt-unicode256
-TERM screen
-TERM screen-256color
-TERM screen-256color-bce
-TERM screen-bce
-TERM screen-w
-TERM screen.Eterm
-TERM screen.rxvt
-TERM screen.linux
+TERM rxvt*
+TERM screen*
 TERM st
 TERM st-256color
 TERM terminator
 TERM vt100
-TERM xterm
-TERM xterm-16color
-TERM xterm-256color
-TERM xterm-88color
-TERM xterm-color
-TERM xterm-debian
+TERM xterm*
 
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
@@ -357,6 +339,8 @@ EXEC 33
 *Gemfile         35
 *Rakefile        35
 *Makefile        35
+
+*node_modules    32
 
 *gulpfile.js     31
 
