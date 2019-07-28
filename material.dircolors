@@ -330,9 +330,7 @@ EXEC 33
 .jade    34
 .pug     34
 
-.vue     36
-
-.vue     31
+.vue     32
 
 .scala     31
 
@@ -359,6 +357,10 @@ EXEC 33
 *Gemfile         35
 *Rakefile        35
 *Makefile        35
+
+*gulpfile.js     31
+
+*Gruntfile.js     33
 
 *.babelrc         33
 *.babel.js        33
