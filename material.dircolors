@@ -107,55 +107,55 @@ EXEC 32
 .class 32
 
  # archives or compressed
-.tar 31
-.tgz 31
-.arc 31
-.arj 31
-.taz 31
-.lha 31
-.lz4 31
-.lzh 31
-.lzma 31
-.tlz 31
-.txz 31
-.tzo 31
-.t7z 31
-.zip 31
-.z 31
-.Z 31
-.dz 31
-.gz 31
-.lrz 31
-.lz 31
-.lzo 31
-.xz 31
-.zst 31
-.tzst 31
-.bz2 31
-.bz 31
-.tbz 31
-.tbz2 31
-.tz 31
-.deb 31
-.rpm 31
-.jar 31
-.war 31
-.ear 31
-.sar 31
-.rar 31
-.alz 31
-.ace 31
-.zoo 31
-.cpio 31
-.7z 31
-.rz 31
-.cab 31
-.wim 31
-.swm 31
-.dwm 31
-.esd 31
-.apk 31
-.gem 31
+.tar 32
+.tgz 32
+.arc 32
+.arj 32
+.taz 32
+.lha 32
+.lz4 32
+.lzh 32
+.lzma 32
+.tlz 32
+.txz 32
+.tzo 32
+.t7z 32
+.zip 32
+.z 32
+.Z 32
+.dz 32
+.gz 32
+.lrz 32
+.lz 32
+.lzo 32
+.xz 32
+.zst 32
+.tzst 32
+.bz2 32
+.bz 32
+.tbz 32
+.tbz2 32
+.tz 32
+.deb 32
+.rpm 32
+.jar 32
+.war 32
+.ear 32
+.sar 32
+.rar 32
+.alz 32
+.ace 32
+.zoo 32
+.cpio 32
+.7z 32
+.rz 32
+.cab 32
+.wim 32
+.swm 32
+.dwm 32
+.esd 32
+.apk 32
+.gem 32
 
 # image formats
 .jpg 35
@@ -212,6 +212,7 @@ EXEC 32
 .emf 34
 .ogv 34
 .ogx 34
+.3g2 34
 .3gp 34
 .3gp2 34
 .3gpp 34
@@ -263,64 +264,69 @@ EXEC 32
 
 ## source formats
 
-# compilable
-.c     35
-.h     35
-.cc    35
-.cpp   35
-.go    35
-.rs    35
-.java  35
+.c     34
+.h     34
+.cc    34
+.cpp   34
+
+.cs    32
+
+.go    34
+
+.rs    33
+
+.java  31
+
 .pas   35
 
-# intrpretable
-.py    36
-.rb    36
-.ru    36
-.py    36
-.lua   36
+.py    34
 
-# scripts
-.js        31
-.jsx       31
-.ts        31
-.tsx       31
-.coffee    31
+.rb    31
+.ru    31
+
+.lua   34
+
+.js        33
+.jsx       33
+.ts        33
+.tsx       33
+.coffee    33
 
 .php       35
 
-# styles
 .css     32
 .sss     32
 .less    32
 .scss    32
 .sass    32
 
-# templates
-.html    33
-.htm     33
-.hjs     33
-.haml    33
-.slim    33
-.erb     33
-.jade    33
+.html    34
+.htm     34
+.hjs     34
+.haml    34
+.slim    34
+.erb     34
+.jade    34
+.pug    34
 
-# data
-.csv          34
+
+.csv          32
+
 .json         34
-.yml          34
-.yaml         34
-.xml          34
-.md           34
-.markdown     34
+
+.yml          35
+.yaml         35
+.xml          35
+
+.md           31
+.markdown     31
 
 # configs
 .cfg          36
+.conf         36
 .ini          36
 
-
 # packages
-
 *package.json    35
 *Gemfile         35
 *Rakefile        35
@@ -334,9 +340,8 @@ EXEC 32
 
 
 # databases
-.db          01;30
-.sqlite3     01;30
-
+.db          35
+.sqlite3     35
 
 # other
 .log          37
