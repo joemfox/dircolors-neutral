@@ -365,6 +365,14 @@ EXEC 33
 .babelrc.js      33
 .babel.json      33
 .babelrc.json    33
+babelrc          33
+babel.js         33
+babelrc.js       33
+babel.json       33
+babelrc.json     33
+
+
+bower.json    33
 
 # special files
 *id_rsa         30
