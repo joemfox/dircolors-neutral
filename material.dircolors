@@ -239,11 +239,6 @@ EXEC 33
 .xls 34
 .ods 34
 
-# Encrypted and keys
-.gpg 31
-.pgp 31
-.kbx 31
-
 # Other formats 
 
 .ttf   33
@@ -366,11 +361,18 @@ EXEC 33
 *.gitignore       33
 
 
-# special files
-*id_rsa         30
-*id_rsa.pub     30
-*known_hosts    34
+# Keys
+*id_rsa         31
+*id_rsa.pub     31
+.gpg            31
+.pgp            31
+.kbx            31
 
+
+# SSH
+*known_hosts      36
+*config           36
+*authorized_keys  36
 
 # databases
 .db          35
