@@ -407,6 +407,7 @@ EXEC             33
 .so              34
 .dll             34
 .class           34
+.node            34
 
 # other
 .log             37
