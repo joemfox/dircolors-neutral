@@ -339,12 +339,24 @@ EXEC             33
 .conf            36
 .ini             36
 
-# Keys
-*id_rsa          31
-*id_rsa.pub      31
+# encrypted data {{{1
+.asc             31
+.bfe             31
+.enc             31
 .gpg             31
+.signature       31
+.sig             31
+.p12             31
+.pem             31
 .pgp             31
-.kbx             31
+.asc             31
+.enc             31
+.sig             31
+.p7s             31
+*id_dsa          31
+*id_rsa          31
+*id_ecdsa        31
+*id_ed25519      31
 
 # SSH
 *known_hosts     36
@@ -365,6 +377,29 @@ EXEC             33
 .pfb             33
 .pfm             33
 .otf             33
+
+# /etc/hosts.{deny,allow}
+.allow           32
+.deny            31
+
+# systemd
+# http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+.service         34
+*@.service       34
+.socket          34
+.swap            34
+.device          34
+.mount           34
+.automount       34
+.target          34
+.path            34
+.timer           34
+.snapshot        34
+.slice           34
+
+# patch files
+.diff            30;41
+.patch           30;41
 
 # Libs
 .so              34
