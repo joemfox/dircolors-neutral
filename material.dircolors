@@ -302,10 +302,12 @@ EXEC             33
 .lhs             34
 
 # Special configs 
-*package.json    35
-*Gemfile         35
-*Rakefile        35
-*Makefile        35
+*package.json    4;35
+*Gemfile         4;35
+*Rakefile        4;35
+*Makefile        4;35
+*Cargo.toml      4;33
+*Vagrantfile     4;34
 
 *node_modules    32
 
