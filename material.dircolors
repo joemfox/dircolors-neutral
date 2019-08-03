@@ -68,6 +68,7 @@ EXEC             33
 .btm             33
 .bat             33
 .sh              33
+.bash            33
 .csh             33
 .zsh             33
 .fish            33
@@ -102,10 +103,6 @@ EXEC             33
 .tbz             32
 .tbz2            32
 .tz              32
-.deb             32
-.rpm             32
-.jar             32
-.war             32
 .ear             32
 .sar             32
 .rar             32
@@ -122,6 +119,32 @@ EXEC             33
 .esd             32
 .apk             32
 .gem             32
+
+# packaged apps
+.apk             33
+.deb             33
+.rpm             33
+.jad             33
+.jar             33
+.war             33
+.cab             33
+.pak             33
+.pk3             33
+.vdf             33
+.vpk             33
+.bsp             33
+.dmg             33
+
+# partition images
+.dmg             31
+.iso             31
+.bin             31
+.nrg             31
+.qcow            31
+.sparseimage     31
+.toast           31
+.vcd             31
+.vmdk            31
 
 # image formats
 .jpg             35
@@ -213,20 +236,15 @@ EXEC             33
 .pptx            33
 .odp             33
 
-# book formats
-.pdf             36
-.djvu            36
-.epub            36
-
 # spreadsheet formats
 .xlsx            34
 .xls             34
 .ods             34
 
-# Other formats 
-.ttf             33
-.woff            33
-.woff2           33
+# book formats
+.pdf             36
+.djvu            36
+.epub            36
 
 ## source formats
 .c               34
@@ -241,6 +259,8 @@ EXEC             33
 .pas             35
 .py              34
 .rb              31
+.erb             31
+.gemspec         31
 .ru              31
 .lua             35
 .xlt             32
@@ -265,7 +285,6 @@ EXEC             33
 .hjs             34
 .haml            34
 .slim            34
-.erb             34
 .jade            34
 .pug             34
 .vue             32
@@ -278,6 +297,9 @@ EXEC             33
 .md              31
 .markdown        31
 .latex           35
+.pl              33
+.hs              34
+.lhs             34
 
 # Special configs 
 *package.json    35
@@ -307,7 +329,10 @@ EXEC             33
 
 *bower.json      33
 
+*.git            33
 *.gitignore      33
+*.gitattributes  33
+*.gitmodules     33
 
 # Configs
 .cfg             36
@@ -329,6 +354,17 @@ EXEC             33
 # databases
 .db              35
 .sqlite3         35
+
+# fonts 
+.ttf             33
+.woff            33
+.woff2           33
+.afm             33
+.fon             33
+.fnt             33
+.pfb             33
+.pfm             33
+.otf             33
 
 # Libs
 .so              34
