@@ -62,7 +62,7 @@ function createExampleFiles {
 function reloadDircolors {
   GENERATED_DIRCOLORS=$EXAMPLE_DIR.generated
 
-  cat $SCRIPT_DIR/../dircolors.material \
+  cat $SCRIPT_DIR/../material.dircolors \
       $SCRIPT_DIR/dircolors.all_colors > $GENERATED_DIRCOLORS
 
   printf "\nReloading dircolors!  ゜ﾟ･ ヽ(⊙ ‿ ⊙)ノ ･゜ﾟ\n\n"

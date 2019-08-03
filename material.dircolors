@@ -336,6 +336,11 @@ EXEC             33
 *.gitattributes  33
 *.gitmodules     33
 
+# Files
+*LICENSE         4;33
+*README          4;33
+*README.md       4;31
+
 # Configs
 .cfg             36
 .conf            36
@@ -364,6 +369,10 @@ EXEC             33
 *known_hosts     36
 *config          36
 *authorized_keys 36
+
+# RC files
+*.bashrc         33
+*.zshrc          33
 
 # databases
 .db              35
@@ -402,6 +411,9 @@ EXEC             33
 # patch files
 .diff            30;41
 .patch           30;41
+
+# Files
+.torrent         32
 
 # Libs
 .so              34
