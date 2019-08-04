@@ -79,6 +79,7 @@ EXEC             33
 .class           34
 .node            34
 .pyc             34
+.pyo             34
 
  # archives or compressed
 .tar             32
