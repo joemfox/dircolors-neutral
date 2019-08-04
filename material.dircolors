@@ -73,6 +73,13 @@ EXEC             33
 .zsh             33
 .fish            33
 
+# Libs
+.so              34
+.dll             34
+.class           34
+.node            34
+.pyc             34
+
  # archives or compressed
 .tar             32
 .tgz             32
@@ -134,6 +141,7 @@ EXEC             33
 .vpk             33
 .bsp             33
 .dmg             33
+.msi             33
 
 # partition images
 .dmg             31
@@ -149,8 +157,6 @@ EXEC             33
 # image formats
 .jpg             35
 .jpeg            35
-.mjpg            35
-.mjpeg           35
 .gif             35
 .webp            35
 .wma             35
@@ -190,16 +196,13 @@ EXEC             33
 .asf             34
 .rm              34
 .rmvb            34
-.flc             34
 .avi             34
-.fli             34
 .flv             34
 .gl              34
 .dl              34
 .xcf             34
 .xwd             34
 .yuv             34
-.cgm             34
 .emf             34
 .ogv             34
 .ogx             34
@@ -296,11 +299,12 @@ EXEC             33
 .xml             35
 .md              31
 .markdown        31
-.tex           35
+.tex             35
 .latex           35
 .pl              33
 .hs              34
 .lhs             34
+.txt             0
 
 # Special configs 
 *package.json    4;35
@@ -349,7 +353,6 @@ EXEC             33
 
 # encrypted data {{{1
 .asc             31
-.bfe             31
 .enc             31
 .gpg             31
 .signature       31
@@ -415,12 +418,6 @@ EXEC             33
 
 # Files
 .torrent         32
-
-# Libs
-.so              34
-.dll             34
-.class           34
-.node            34
 
 # other
 .log             37
