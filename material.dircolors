@@ -60,7 +60,7 @@ STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
 STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
 
-# executables (bright green)
+# Executables
 EXEC             33
 .cmd             33 
 .exe             33
@@ -81,7 +81,7 @@ EXEC             33
 .pyc             34
 .pyo             34
 
- # archives or compressed
+ # Archives or compressed
 .tar             32
 .tgz             32
 .arc             32
@@ -128,7 +128,7 @@ EXEC             33
 .apk             32
 .gem             32
 
-# packaged apps
+# Packaged apps
 .apk             33
 .deb             33
 .rpm             33
@@ -144,7 +144,7 @@ EXEC             33
 .dmg             33
 .msi             33
 
-# partition images
+# Partition images
 .dmg             31
 .iso             31
 .bin             31
@@ -155,7 +155,7 @@ EXEC             33
 .vcd             31
 .vmdk            31
 
-# image formats
+# Image formats
 .jpg             35
 .jpeg            35
 .gif             35
@@ -178,7 +178,7 @@ EXEC             33
 .ico             35
 .eps             35
 
-# video formats
+# Video formats
 .mov             34
 .movie           34
 .mpg             34
@@ -212,7 +212,7 @@ EXEC             33
 .3gp2            34
 .3gpp            34
 
-# audio formats
+# Audio formats
 .aac             36
 .au              36
 .flac            36
@@ -230,27 +230,29 @@ EXEC             33
 .spx             36
 .xspf            36
 
-# document formats
+# Document formats
 .doc             36
 .docx            36
 .odt             36
 
-# presentation formats
+# Presentation formats
 .ppt             33
 .pptx            33
 .odp             33
 
-# spreadsheet formats
+# Spreadsheet formats
 .xlsx            34
 .xls             34
 .ods             34
+.csv             34
+.tsv             34
 
-# book formats
+# Book formats
 .pdf             36
 .djvu            36
 .epub            36
 
-## source formats
+# Source formats
 .c               34
 .h               34
 .hpp             34
@@ -293,7 +295,6 @@ EXEC             33
 .pug             34
 .vue             32
 .scala           31
-.csv             32
 .json            34
 .yml             35
 .yaml            35
@@ -352,7 +353,7 @@ EXEC             33
 .conf            36
 .ini             36
 
-# encrypted data {{{1
+# Encrypted data
 .asc             31
 .enc             31
 .gpg             31
@@ -383,7 +384,7 @@ EXEC             33
 .db              35
 .sqlite3         35
 
-# fonts 
+# Fonts 
 .ttf             33
 .woff            33
 .woff2           33
@@ -398,7 +399,7 @@ EXEC             33
 .allow           32
 .deny            31
 
-# systemd
+# Systemd
 # http://www.freedesktop.org/software/systemd/man/systemd.unit.html
 .service         34
 *@.service       34
@@ -413,14 +414,14 @@ EXEC             33
 .snapshot        34
 .slice           34
 
-# patch files
+# Patch files
 .diff            30;41
 .patch           30;41
 
 # Files
 .torrent         32
 
-# other
+# Other
 .log             37
 .zwc             37
 .log             37
