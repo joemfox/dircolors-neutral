@@ -61,25 +61,25 @@ OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
 STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
 
 # Executables
-EXEC             33
-.cmd             33 
-.exe             33
-.com             33
-.btm             33
-.bat             33
-.sh              33
-.bash            33
-.csh             33
-.zsh             33
-.fish            33
+EXEC             1;33
+.cmd             1;33 
+.exe             1;33
+.com             1;33
+.btm             1;33
+.bat             1;33
+.sh              1;33
+.bash            1;33
+.csh             1;33
+.zsh             1;33
+.fish            1;33
 
 # Libs
-.so              34
-.dll             34
-.class           34
-.node            34
-.pyc             34
-.pyo             34
+.dll             2;34
+.class           2;34
+.node            2;34
+.pyc             2;34
+.so              2;34
+.pyo             2;34
 
  # Archives or compressed
 .tar             32
@@ -306,10 +306,12 @@ EXEC             33
 .pl              33
 .hs              34
 .lhs             34
+.map             36
 .txt             0
 
 # Special configs 
 *package.json    4;35
+*bower.json      4;35
 *Gemfile         4;35
 *Rakefile        4;35
 *Makefile        4;35
@@ -318,30 +320,33 @@ EXEC             33
 
 *node_modules    32
 
-*gulpfile.js     31
-*Gruntfile.js    33
+*gulpfile.js     2;33
+*Gruntfile.js    2;33
+*tsconfig.json   2;34
+*tsconfig.*.json 2;34
+*jsdoc.json      2;34
 
-*.babelrc        33
-*.babel.js       33
-*.babelrc.js     33
-*.babel.json     33
-*.babelrc.json   33
-*babelrc         33
-*babel.js        33
-*babelrc.js      33
-*babel.json      33
-*babelrc.json    33
+*.babelrc        2;33
+*.babel.js       2;33
+*.babelrc.js     2;33
+*.babel.json     2;33
+*.babelrc.json   2;33
+*babelrc         2;33
+*babel.js        2;33
+*babelrc.js      2;33
+*babel.json      2;33
+*babelrc.json    2;33
+*babel..json     2;33
+*babel.*.js      2;33
+*rollup.*.json   2;33
+*rollup.*.js     2;33
 
-*.eslintrc       35
-*.eslintrc.js    35
-*.eslintrc.json  35
+*.eslintrc       2;35
+*.eslintrc.js    2;35
+*.eslintrc.json  2;35
 
-*bower.json      33
 
-*.git            33
-*.gitignore      33
-*.gitattributes  33
-*.gitmodules     33
+*package-lock.json 2;35
 
 # Files
 *LICENSE         4;33
