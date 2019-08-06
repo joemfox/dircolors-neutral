@@ -307,6 +307,7 @@ EXEC             1;33
 .hs              34
 .lhs             34
 .map             36
+.vim             32
 .txt             0
 
 # Special configs 
@@ -336,7 +337,7 @@ EXEC             1;33
 *babelrc.js      2;33
 *babel.json      2;33
 *babelrc.json    2;33
-*babel..json     2;33
+*babel.json      2;33
 *babel.*.js      2;33
 *rollup.*.json   2;33
 *rollup.*.js     2;33
@@ -382,8 +383,20 @@ EXEC             1;33
 *authorized_keys 36
 
 # RC files
+*.xinitrc        34
+*.xbindkeysrc    34
+*.Xresources     34
+*.profile        33
 *.bashrc         33
+*.bash_profile   33
+*.bashrc.aliases 33
+*.bash_logout    33
+*.bashrc         33
+*.bashrc         33
+*.zprofile       33
 *.zshrc          33
+*.zshrc.local    33
+*.vimrc          32
 
 # databases
 .db              35
@@ -425,12 +438,18 @@ EXEC             1;33
 
 # Files
 .torrent         32
+.directory       34
 
 # Other
-.log             37
-.zwc             37
-.log             37
-.lock            37
-.old             37
-.o               37
-*~               37
+.log             2;37
+.zwc             2;37
+.log             2;37
+.lock            2;37
+.old             2;37
+.o               2;37
+*~               2;37
+*.zsh_history    2;37
+*.zcompdump      2;37
+*.bash_history   2;37
+*.viminfo        2;37
+
