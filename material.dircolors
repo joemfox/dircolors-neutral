@@ -346,36 +346,7 @@ EXEC             1;33
 *.eslintrc.js    2;35
 *.eslintrc.json  2;35
 
-
 *package-lock.json 2;35
-
-# Files
-*LICENSE         4;33
-*README          4;33
-*README.md       4;31
-
-# Configs
-.cfg             36
-.conf            36
-.ini             36
-
-# Encrypted data
-.asc             31
-.enc             31
-.gpg             31
-.signature       31
-.sig             31
-.p12             31
-.pem             31
-.pgp             31
-.asc             31
-.enc             31
-.sig             31
-.p7s             31
-*id_dsa          31
-*id_rsa          31
-*id_ecdsa        31
-*id_ed25519      31
 
 # SSH
 *known_hosts     36
@@ -413,6 +384,38 @@ EXEC             1;33
 .pfm             33
 .otf             33
 
+# Patch files
+.diff            30;41
+.patch           30;41
+
+# Files
+*LICENSE         4;33
+*README          4;33
+*README.md       4;31
+
+# Configs
+.cfg             36
+.conf            36
+.ini             36
+
+# Encrypted data
+.asc             31
+.enc             31
+.gpg             31
+.signature       31
+.sig             31
+.p12             31
+.pem             31
+.pgp             31
+.asc             31
+.enc             31
+.sig             31
+.p7s             31
+*id_dsa          31
+*id_rsa          31
+*id_ecdsa        31
+*id_ed25519      31
+
 # /etc/hosts.{deny,allow}
 .allow           32
 .deny            31
@@ -431,10 +434,6 @@ EXEC             1;33
 .timer           34
 .snapshot        34
 .slice           34
-
-# Patch files
-.diff            30;41
-.patch           30;41
 
 # Files
 .torrent         32
