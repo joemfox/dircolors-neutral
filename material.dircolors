@@ -441,6 +441,7 @@ EXEC             1;33
 # Files
 .torrent         32
 .directory       34
+.desktop         34
 
 # Other
 .log             2;37
