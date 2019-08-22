@@ -6,7 +6,7 @@ Dircolors material theme
 ## Installation
 
 1. Download the latest
-[dircolors.material](https://raw.github.com/zpm-zsh/dircolors-material/master/dircolors.material)
+[material.dircolors](https://raw.github.com/zpm-zsh/dircolors-material/master/material.dircolors)
 and put it in `$HOME/.dircolors` (which under Ubuntu will be loaded on login,
 probably true for other distros as well)
 
