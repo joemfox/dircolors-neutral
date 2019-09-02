@@ -298,6 +298,7 @@ EXEC             1;33
 .vue             32
 .scala           31
 .json            34
+.cson            34
 .yml             35
 .yaml            35
 .xml             35
