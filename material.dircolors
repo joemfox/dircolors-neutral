@@ -127,6 +127,8 @@ EXEC             1;33
 .esd             32
 .apk             32
 .gem             32
+.xpi             32
+.crx             32
 
 # Packaged apps
 .apk             33
