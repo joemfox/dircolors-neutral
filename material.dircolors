@@ -71,6 +71,7 @@ EXEC             1;33
 .bash            1;33
 .csh             1;33
 .zsh             1;33
+.zsh-theme       1;33
 .fish            1;33
 
 # Libs
