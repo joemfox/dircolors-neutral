@@ -1,14 +1,19 @@
 #!/usr/bin/env zsh
 
-if [[ ! -f ${${(%):-%x}:a:h}/material.dircolors.cache.zsh ]]; then
+# Standarized $0 handling, following:
+# https://github.com/zdharma/Zsh-100-Commits-Club/blob/master/Zsh-Plugin-Standard.adoc
+0="${${ZERO:-${0:#$ZSH_ARGZERO}}:-${(%):-%N}}"
+_DIRNAME="${0:h}"
+
+if [[ ! -f "${_DIRNAME}/material.dircolors.cache.zsh" ]]; then
   if (( $+commands[dircolors] )); then
-    dircolors ${${(%):-%x}:a:h}/material.dircolors > "${${(%):-%x}:a:h}/material.dircolors.cache.zsh"
+    dircolors "${_DIRNAME}/material.dircolors" > "${_DIRNAME}/material.dircolors.cache.zsh"
   else
     if (( $+commands[gdircolors] )); then
-      gdircolors ${${(%):-%x}:a:h}/material.dircolors > "${${(%):-%x}:a:h}/material.dircolors.cache.zsh"
+      gdircolors "${_DIRNAME}/material.dircolors" > "${_DIRNAME}/material.dircolors.cache.zsh"
     fi
   fi
 fi
-source "${${(%):-%x}:a:h}/material.dircolors.cache.zsh"
+source "${_DIRNAME}/material.dircolors.cache.zsh"
 
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
