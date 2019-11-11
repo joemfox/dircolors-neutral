@@ -5,7 +5,7 @@
 0="${${ZERO:-${0:#$ZSH_ARGZERO}}:-${(%):-%N}}"
 _DIRNAME="${0:h}"
 
-if [[ ! -f "${_DIRNAME}/material.dircolors.cache.zsh" ]]; then
+if [[ ! -f "${TMPDIR:-/tmp}/.material-dircolors-cache-${USER}.zsh" ]]; then
   if (( $+commands[dircolors] )); then
     dircolors "${_DIRNAME}/material.dircolors" > "${TMPDIR:-/tmp}/.material-dircolors-cache-${USER}.zsh"
   elif (( $+commands[gdircolors] )); then
