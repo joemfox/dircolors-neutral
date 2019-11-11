@@ -7,13 +7,11 @@ _DIRNAME="${0:h}"
 
 if [[ ! -f "${_DIRNAME}/material.dircolors.cache.zsh" ]]; then
   if (( $+commands[dircolors] )); then
-    dircolors "${_DIRNAME}/material.dircolors" > "${_DIRNAME}/material.dircolors.cache.zsh"
-  else
-    if (( $+commands[gdircolors] )); then
-      gdircolors "${_DIRNAME}/material.dircolors" > "${_DIRNAME}/material.dircolors.cache.zsh"
-    fi
+    dircolors "${_DIRNAME}/material.dircolors" > "${TMPDIR:-/tmp}/.material-dircolors-cache-${USER}.zsh"
+  elif (( $+commands[gdircolors] )); then
+    gdircolors "${_DIRNAME}/material.dircolors" > "${TMPDIR:-/tmp}/.material-dircolors-cache-${USER}.zsh"
   fi
 fi
-source "${_DIRNAME}/material.dircolors.cache.zsh"
+source "${TMPDIR:-/tmp}/.material-dircolors-cache-${USER}.zsh"
 
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
