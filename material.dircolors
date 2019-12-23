@@ -448,6 +448,11 @@ EXEC             1;33
 .directory       34
 .desktop         34
 
+# Map data
+.kml             35
+.kmz             35
+
+
 # Other
 .log             2;37
 .zwc             2;37
