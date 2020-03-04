@@ -267,6 +267,7 @@ EXEC             1;33
 .java            31
 .pas             35
 .py              34
+.ipynb           34
 .rb              31
 .erb             31
 .gemspec         31
