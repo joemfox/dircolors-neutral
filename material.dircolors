@@ -325,8 +325,6 @@ EXEC             1;33
 
 *node_modules    32
 
-*gulpfile.js     2;33
-*Gruntfile.js    2;33
 *tsconfig.json   2;34
 *tsconfig.*.json 2;34
 *jsdoc.json      2;34
