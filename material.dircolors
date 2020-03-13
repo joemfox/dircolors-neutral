@@ -62,25 +62,27 @@ STICKY           37;44                 # dir with the sticky bit set (+t) and no
 
 # Executables
 EXEC             1;33
-.cmd             1;33
-.exe             1;33
-.com             1;33
-.btm             1;33
-.bat             1;33
-.sh              1;33
-.bash            1;33
-.csh             1;33
-.zsh             1;33
-.zsh-theme       1;33
-.fish            1;33
+
+# Scripts & exec
+.cmd             33
+.exe             33
+.com             33
+.btm             33
+.bat             33
+.sh              33
+.bash            33
+.csh             33
+.zsh             33
+.zsh-theme       33
+.fish            33
 
 # Libs
-.dll             2;34
-.class           2;34
-.node            2;34
-.pyc             2;34
-.so              2;34
-.pyo             2;34
+.dll             34
+.class           34
+.node            34
+.pyc             34
+.so              34
+.pyo             34
 
  # Archives or compressed
 .tar             32
