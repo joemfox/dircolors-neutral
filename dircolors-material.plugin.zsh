@@ -2,7 +2,7 @@
 
 DIRCOLORS_CACHE_FILE="${TMPDIR:-/tmp}/zsh-${UID}/material-dircolors.zsh"
 
-if [[ ! -f "${DIRCOLORS_CACHE_FILE}" ]]; then
+source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   # Standarized $0 handling, following:
   # https://github.com/zdharma/Zsh-100-Commits-Club/blob/master/Zsh-Plugin-Standard.adoc
   0="${${ZERO:-${0:#$ZSH_ARGZERO}}:-${(%):-%N}}"
@@ -15,7 +15,5 @@ if [[ ! -f "${DIRCOLORS_CACHE_FILE}" ]]; then
   elif (( $+commands[gdircolors] )); then
     gdircolors "${_DIRNAME}/material.dircolors" > "${DIRCOLORS_CACHE_FILE}"
   fi
-fi
-source "${DIRCOLORS_CACHE_FILE}"
-
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+  source "${DIRCOLORS_CACHE_FILE}"
+}
