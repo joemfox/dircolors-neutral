@@ -17,3 +17,8 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   fi
   source "${DIRCOLORS_CACHE_FILE}"
 }
+
+if [[ "$CLICOLOR" != '0' ]]; then
+  zstyle ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)*==36=36}:${(s.:.)LS_COLORS}")'
+  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=7;33'
+fi
