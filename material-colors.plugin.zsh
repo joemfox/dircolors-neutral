@@ -24,6 +24,8 @@ if [[ "$CLICOLOR" != '0' ]]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=7;33'
 fi
 
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 export LESS_TERMCAP_mb="${c[green]}"
 export LESS_TERMCAP_md="${c[bold]}${c[blue]}${c[bg_black]}"
 export LESS_TERMCAP_so="${c[bold]}${c[bg_yellow]}${c[black]}"
