@@ -2,6 +2,7 @@
 
 DIRCOLORS_CACHE_FILE="${TMPDIR:-/tmp}/zsh-${UID}/material-dircolors.zsh"
 
+# Dircolors
 source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   # Standarized $0 handling, following:
   # https://github.com/zdharma/Zsh-100-Commits-Club/blob/master/Zsh-Plugin-Standard.adoc
@@ -19,13 +20,16 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   source "${DIRCOLORS_CACHE_FILE}"
 }
 
+# Zsh colors 
 if [[ "$CLICOLOR" != '0' ]]; then
   zstyle ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)*==36=36}:${(s.:.)LS_COLORS}")'
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=7;33'
 fi
 
+# GCC Colors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# Less Colors
 export LESS_TERMCAP_mb="${c[green]}"
 export LESS_TERMCAP_md="${c[bold]}${c[blue]}${c[bg_black]}"
 export LESS_TERMCAP_so="${c[bold]}${c[bg_yellow]}${c[black]}"
@@ -35,9 +39,10 @@ export LESS_TERMCAP_ue="${c[reset]}"
 export LESS_TERMCAP_me="${c[reset]}"
 export LESS_TERMCAP_se="${c[reset]}"
 
+# Grep Colors
 GREP_COLORS=''
 GREP_COLORS+=":mt=${c[bold]:2:-1};${c[cyan]:2:-1}"
-GREP_COLORS+=":ms=${c[bold]:2:-1};${c[green]:2:-1}"
+GREP_COLORS+=":ms=${c[bg_red]:2:-1};${c[bold]:2:-1};${c[black]:2:-1}"
 GREP_COLORS+=":mc=${c[bold]:2:-1};${c[red]:2:-1}"
 GREP_COLORS+=':sl='
 GREP_COLORS+=':cx='
@@ -48,6 +53,12 @@ GREP_COLORS+=":se=${c[bold]:2:-1};${c[cyan]:2:-1};${c[bg_black]:2:-1}"
 
 export GREP_COLORS
 
+# Ag Colors
+function ag(){
+  command ag --color-path "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[magenta]:2:-1}" --color-match "${c[bg_red]:2:-1};${c[bold]:2:-1};${c[black]:2:-1}" --color-line-number "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[green]:2:-1}" $@
+}
+
+# FSH Colors
 zstyle :plugin:fast-syntax-highlighting theme "material"
 typeset -g FAST_THEME_NAME="material"
 typeset -Ag FAST_HIGHLIGHT_STYLES
