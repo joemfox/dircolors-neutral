@@ -20,14 +20,22 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   source "${DIRCOLORS_CACHE_FILE}"
 }
 
-# Zsh colors 
+# Zsh colors
 if [[ "$CLICOLOR" != '0' ]]; then
   zstyle ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)*==36=36}:${(s.:.)LS_COLORS}")'
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=7;33'
 fi
 
 # GCC Colors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+GCC_COLORS=''
+GCC_COLORS+="error=${c[bold]:2:-1};${c[red]:2:-1}"
+GCC_COLORS+=":warning=${c[bold]:2:-1};${c[yellow]:2:-1}"
+GCC_COLORS+=":note=01;36${c[bold]:2:-1};${c[white]:2:-1}"
+GCC_COLORS+=":caret=01;32${c[bold]:2:-1};${c[white]:2:-1}"
+GCC_COLORS+=":locus=${c[bg_black]:2:-1};${c[bold]:2:-1};${c[magenta]:2:-1}"
+GCC_COLORS+=":quote=${c[bold]:2:-1};${c[yellow]:2:-1}"
+
+export GCC_COLORS
 
 # Less Colors
 export LESS_TERMCAP_mb="${c[green]}"
