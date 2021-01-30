@@ -12,11 +12,17 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
 
   mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}"
 
+  local COMMAND
   if (( $+commands[dircolors] )); then
-    dircolors <(${_DIRNAME}/generate-dircolors.sh ${_DIRNAME}/dircolors) > "${DIRCOLORS_CACHE_FILE}"
+    COMMAND="dircolors"
   elif (( $+commands[gdircolors] )); then
-    gdircolors <(${_DIRNAME}/generate-dircolors.sh ${_DIRNAME}/dircolors) > "${DIRCOLORS_CACHE_FILE}"
+    COMMAND="gdircolors"
   fi
+
+  for file in "${_DIRNAME}/dircolors/"*.dircolors; do
+    cat "$file"
+  done | $COMMAND - > "${DIRCOLORS_CACHE_FILE}"
+
   source "${DIRCOLORS_CACHE_FILE}"
 }
 
@@ -62,7 +68,7 @@ GREP_COLORS+=":se=${c[bold]:2:-1};${c[cyan]:2:-1};${c[bg_black]:2:-1}"
 export GREP_COLORS
 
 # Ag Colors
-function ag(){
+function ag() {
   command ag --color-path "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[magenta]:2:-1}" --color-match "${c[bg_red]:2:-1};${c[bold]:2:-1};${c[black]:2:-1}" --color-line-number "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[green]:2:-1}" $@
 }
 
