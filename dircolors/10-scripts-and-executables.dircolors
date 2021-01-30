@@ -1,3 +1,6 @@
+# Executables
+EXEC 33;01
+
 # Scripts & exec
 *.cmd       33
 *.exe       33

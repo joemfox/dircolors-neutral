@@ -1,0 +1,32 @@
+# Node.js
+*package.json      4;35
+*package-lock.json 2;35
+
+*bower.json 4;35
+
+*tsconfig.json 2;34
+
+*tsconfig.*.json 2;34
+
+*jsdoc.json 2;34
+
+*.babelrc 2;33
+
+*.babel.js 2;33
+
+*.babelrc.js   2;33
+*.babel.json   2;33
+*.babelrc.json 2;33
+*babelrc       2;33
+*babel.js      2;33
+*babelrc.js    2;33
+*babel.json    2;33
+*babelrc.json  2;33
+*babel.json    2;33
+*babel.*.js    2;33
+*rollup.*.json 2;33
+*rollup.*.js   2;33
+
+*.eslintrc      2;35
+*.eslintrc.js   2;35
+*.eslintrc.json 2;35
