@@ -23,27 +23,3 @@ CAPABILITY            30;41;01 # file with capability
 STICKY_OTHER_WRITABLE 30;42;01 # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE        30;46;01 # dir that is other-writable (o+w) and not sticky
 STICKY                30;44;01 # dir with the sticky bit set (+t) and not other-writable
-
-
-
-
-# Project files
-.code-workspace 34
-
-# Special configs
-*Gemfile     4;35
-*Rakefile    4;35
-*Makefile    4;35
-*Cargo.toml  4;33
-*Vagrantfile 4;34
-
-# Configs
-.cfg  36
-.cnf  36
-.conf 36
-.ini  36
-
-# Files
-.torrent   32
-.directory 34
-.desktop   34

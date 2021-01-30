@@ -1,8 +1,12 @@
 # Patch files
-.diff  30;41
-.patch 30;41
+*.diff  30;41
+*.patch 30;41
 
 *config 30;41
+
+*sample      30;41
+*HEAD        30;41
+*description 30;41
 
 # Special Text Files
 *LICENSE   4;33

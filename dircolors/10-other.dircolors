@@ -21,6 +21,8 @@
 *.temp       2;37
 *.o          2;37
 *.cache      2;37
+*.aux        2;37
+*.dist       2;37
 
 *.zcompdump    2;37
 *.viminfo      2;37

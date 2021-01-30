@@ -1,0 +1,55 @@
+# PHP
+*.php 34
+
+# HTML
+*.html  34
+*.xhtml 34
+*.htm   34
+*.haml  34
+*.slim  34
+*.jade  34
+*.pug   34
+*.hjs   34
+*.njk   34
+
+# CSS
+*.css    32
+*.sss    32
+*.less   32
+*.scss   32
+*.sass   32
+*.stylus 32
+
+# Node.js
+*.js     33
+*.jsx    33
+*.ts     33
+*.tsx    33
+*.coffee 33
+*.vue    33
+
+*.d.ts 2;33
+*.flow 2;33
+
+*.cson 34
+*.json 34
+
+*package.json    4;35
+*bower.json      4;35
+*tsconfig.json   4;34
+*tsconfig.*.json 4;34
+*jsdoc.json      4;34
+*.eslintrc       4;34
+*.eslintrc.js    4;34
+*.eslintrc.json  4;34
+*babelrc         4;34
+*babel.js        4;34
+*babelrc.js      4;34
+*babel.json      4;34
+*babelrc.json    4;34
+*babel.json      4;34
+*babel.*.js      4;34
+*rollup.*.json   4;34
+*rollup.*.js     4;34
+
+*package-lock.json 2;35
