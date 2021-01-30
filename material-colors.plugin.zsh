@@ -13,9 +13,9 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}"
 
   if (( $+commands[dircolors] )); then
-    dircolors <(cat ${_DIRNAME}/material.dircolors ${_DIRNAME}/dircolors/*.dircolors) > "${DIRCOLORS_CACHE_FILE}"
+    dircolors <(${_DIRNAME}/generate-dircolors.sh ${_DIRNAME}/dircolors) > "${DIRCOLORS_CACHE_FILE}"
   elif (( $+commands[gdircolors] )); then
-    gdircolors <(cat ${_DIRNAME}/material.dircolors ${_DIRNAME}/dircolors/*.dircolors) > "${DIRCOLORS_CACHE_FILE}"
+    gdircolors <(${_DIRNAME}/generate-dircolors.sh ${_DIRNAME}/dircolors) > "${DIRCOLORS_CACHE_FILE}"
   fi
   source "${DIRCOLORS_CACHE_FILE}"
 }
