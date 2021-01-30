@@ -14,5 +14,5 @@
 *-release    32
 *_release    32
 
-
-*shadow 32
+*rc.local 33
+*inittab  33
