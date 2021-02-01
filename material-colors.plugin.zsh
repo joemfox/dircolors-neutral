@@ -39,12 +39,12 @@ fi
 
 # GCC Colors
 GCC_COLORS=''
-GCC_COLORS+="error=${c[bold]:2:-1};${c[red]:2:-1}"
-GCC_COLORS+=":warning=${c[bold]:2:-1};${c[yellow]:2:-1}"
-GCC_COLORS+=":note=01;36${c[bold]:2:-1};${c[white]:2:-1}"
-GCC_COLORS+=":caret=01;32${c[bold]:2:-1};${c[white]:2:-1}"
-GCC_COLORS+=":locus=${c[bg_black]:2:-1};${c[bold]:2:-1};${c[magenta]:2:-1}"
-GCC_COLORS+=":quote=${c[bold]:2:-1};${c[yellow]:2:-1}"
+GCC_COLORS+="error=${c[raw_bold]};${c[raw_red]}"
+GCC_COLORS+=":warning=${c[raw_bold]};${c[raw_yellow]}"
+GCC_COLORS+=":note=${c[raw_bold]};${c[raw_white]}"
+GCC_COLORS+=":caret=${c[raw_bold]};${c[raw_white]}"
+GCC_COLORS+=":locus=${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"
+GCC_COLORS+=":quote=${c[raw_bold]};${c[raw_yellow]}"
 
 export GCC_COLORS
 
@@ -60,21 +60,25 @@ export LESS_TERMCAP_se="${c[reset]}"
 
 # Grep Colors
 GREP_COLORS=''
-GREP_COLORS+=":mt=${c[bold]:2:-1};${c[cyan]:2:-1}"
-GREP_COLORS+=":ms=${c[bg_red]:2:-1};${c[bold]:2:-1};${c[black]:2:-1}"
-GREP_COLORS+=":mc=${c[bold]:2:-1};${c[red]:2:-1}"
+GREP_COLORS+=":mt=${c[raw_bold]};${c[cyan]}"
+GREP_COLORS+=":ms=${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"
+GREP_COLORS+=":mc=${c[raw_bold]};${c[red]}"
 GREP_COLORS+=':sl='
 GREP_COLORS+=':cx='
-GREP_COLORS+=":fn=${c[bold]:2:-1};${c[magenta]:2:-1};${c[bg_black]:2:-1}"
+GREP_COLORS+=":fn=${c[raw_bold]};${c[raw_magenta]};${c[raw_bg_black]}"
 GREP_COLORS+=':ln=32'
 GREP_COLORS+=':bn=32'
-GREP_COLORS+=":se=${c[bold]:2:-1};${c[cyan]:2:-1};${c[bg_black]:2:-1}"
+GREP_COLORS+=":se=${c[raw_bold]};${c[raw_cyan]};${c[raw_bg_black]}"
 
 export GREP_COLORS
 
 # Ag Colors
 function ag() {
-  command ag --color-path "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[magenta]:2:-1}" --color-match "${c[bg_red]:2:-1};${c[bold]:2:-1};${c[black]:2:-1}" --color-line-number "${c[bg_black]:2:-1};${c[bold]:2:-1};${c[green]:2:-1}" $@
+  command ag \
+  --color-path "${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"      \
+  --color-match "${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"         \
+  --color-line-number "${c[raw_bg_black]};${c[raw_bold]};${c[raw_green]}" \
+  $@
 }
 
 # FSH Colors
