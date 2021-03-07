@@ -7,6 +7,7 @@
 *.tmp        2;37
 *.out        2;37
 *.bak        2;37
+.swo         02;37
 *.swp        2;37
 *.cache      2;37
 *.part       2;37
@@ -23,6 +24,7 @@
 *.cache      2;37
 *.aux        2;37
 *.dist       2;37
+.orig        02;37
 
 *.zcompdump    2;37
 *.viminfo      2;37
