@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-
 if (( $+functions[zpm] )); then #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
   zpm load zpm-zsh/colors #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
 fi #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
@@ -60,9 +59,9 @@ export LESS_TERMCAP_se="${c[reset]}"
 
 # Grep Colors
 GREP_COLORS=''
-GREP_COLORS+=":mt=${c[raw_bold]};${c[cyan]}"
+GREP_COLORS+=":mt=${c[raw_bold]};${c[raw_cyan]}"
 GREP_COLORS+=":ms=${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"
-GREP_COLORS+=":mc=${c[raw_bold]};${c[red]}"
+GREP_COLORS+=":mc=${c[raw_bold]};${c[raw_bg_red]}"
 GREP_COLORS+=':sl='
 GREP_COLORS+=':cx='
 GREP_COLORS+=":fn=${c[raw_bold]};${c[raw_magenta]};${c[raw_bg_black]}"
