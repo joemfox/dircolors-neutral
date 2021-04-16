@@ -14,7 +14,7 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   0="${${(M)0:#/*}:-$PWD/$0}"
   _DIRNAME="${0:h}"
 
-  mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}" & >/dev/null
+  mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}"
 
   local COMMAND
   if (( $+commands[dircolors] )); then
@@ -30,10 +30,11 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   source "${DIRCOLORS_CACHE_FILE}"
 }
 
+zstyle ':completion:*' list-dirs-first true
 # Zsh colors
 if [[ "$CLICOLOR" != '0' ]]; then
-  zstyle ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)*==36=36}:${(s.:.)LS_COLORS}")'
-  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=7;33'
+  zstyle ':completion:*:options' list-colors "=^(-- *)=${c[raw_red]};${c[raw_dim]}" "=*=${c[raw_bold]};${c[raw_cyan]}"
+  zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" 'ma=1;30;43'
 fi
 
 # GCC Colors
