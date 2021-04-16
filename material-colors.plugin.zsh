@@ -14,7 +14,7 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
   0="${${(M)0:#/*}:-$PWD/$0}"
   _DIRNAME="${0:h}"
 
-  mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}"
+  mkdir -p "${TMPDIR:-/tmp}/zsh-${UID}" & >/dev/null
 
   local COMMAND
   if (( $+commands[dircolors] )); then
