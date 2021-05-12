@@ -33,7 +33,6 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
 zstyle ':completion:*' list-dirs-first true
 # Zsh colors
 if [[ "$CLICOLOR" != '0' ]]; then
-  zstyle ':completion:*:options' list-colors "=^(-- *)=${c[raw_red]};${c[raw_dim]}" "=*=${c[raw_bold]};${c[raw_cyan]}"
   zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" 'ma=1;30;43'
 fi
 
