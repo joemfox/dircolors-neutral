@@ -1,13 +1,13 @@
 # Encrypted data
-.asc       31
-.enc       31
-.gpg       31
-.signature 31
-.sig       31
-.p12       31
-.pem       31
-.pgp       31
-.asc       31
-.enc       31
-.sig       31
-.p7s       31
+.asc       $_zpm_mc_secret
+.enc       $_zpm_mc_secret
+.gpg       $_zpm_mc_secret
+.signature $_zpm_mc_secret
+.sig       $_zpm_mc_secret
+.p12       $_zpm_mc_secret
+.pem       $_zpm_mc_secret
+.pgp       $_zpm_mc_secret
+.asc       $_zpm_mc_secret
+.enc       $_zpm_mc_secret
+.sig       $_zpm_mc_secret
+.p7s       $_zpm_mc_secret

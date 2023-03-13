@@ -1,10 +1,11 @@
 #!/usr/bin/env zsh
 
-if (( $+functions[zpm] )); then #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
-  zpm load zpm-zsh/colors #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
-fi #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
+ZSH_CACHE_DIR="${ZSH_CACHE_DIR:-${TMPDIR:-/tmp}/zsh-${UID:-user}}"
+DIRCOLORS_CACHE_FILE="${ZSH_CACHE_DIR}/material-dircolors.zsh"
 
-DIRCOLORS_CACHE_FILE="${TMPDIR:-/tmp}/zsh-${UID}/material-dircolors.zsh"
+if (( $+functions[zpm] )); then
+  zpm load zpm-zsh/colors
+fi
 
 # Dircolors
 source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
@@ -23,9 +24,11 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
     COMMAND="gdircolors"
   fi
 
+  source "${_DIRNAME}/dircolors/colors.sh"
+
   for file in "${_DIRNAME}/dircolors/"*.dircolors; do
     cat "$file"
-  done | $COMMAND - > "${DIRCOLORS_CACHE_FILE}"
+  done | envsubst  | $COMMAND - > "${DIRCOLORS_CACHE_FILE}"
 
   source "${DIRCOLORS_CACHE_FILE}"
 }
@@ -74,10 +77,10 @@ export GREP_COLORS
 # Ag Colors
 function ag() {
   command ag \
-  --color-path "${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"      \
-  --color-match "${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"         \
-  --color-line-number "${c[raw_bg_black]};${c[raw_bold]};${c[raw_green]}" \
-  $@
+    --color-path "${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"      \
+    --color-match "${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"         \
+    --color-line-number "${c[raw_bg_black]};${c[raw_bold]};${c[raw_green]}" \
+    $@
 }
 
 # FSH Colors

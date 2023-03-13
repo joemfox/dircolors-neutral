@@ -1,6 +1,6 @@
 # Spreadsheet formats
-.xlsx 34
-.xls  34
-.ods  34
-.csv  34
-.tsv  34
+.xlsx $_zpm_mc_document
+.xls  $_zpm_mc_document
+.ods  $_zpm_mc_document
+.csv  $_zpm_mc_document
+.tsv  $_zpm_mc_document

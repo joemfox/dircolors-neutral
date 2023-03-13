@@ -1,7 +1,7 @@
 # Libs
-*.dll   34
-*.class 34
-*.node  34
-*.pyc   34
-*.so    34
-*.pyo   34
+*.dll   $_zpm_mc_code
+*.class $_zpm_mc_code
+*.node  $_zpm_mc_code
+*.pyc   $_zpm_mc_code
+*.so    $_zpm_mc_code
+*.pyo   $_zpm_mc_code

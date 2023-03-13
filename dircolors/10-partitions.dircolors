@@ -1,10 +1,10 @@
 # Partition images
-.dmg         31
-.iso         31
-.bin         31
-.nrg         31
-.qcow        31
-.sparseimage 31
-.toast       31
-.vcd         31
-.vmdk        31
+.dmg         $_zpm_mc_data
+.iso         $_zpm_mc_data
+.bin         $_zpm_mc_data
+.nrg         $_zpm_mc_data
+.qcow        $_zpm_mc_data
+.sparseimage $_zpm_mc_data
+.toast       $_zpm_mc_data
+.vcd         $_zpm_mc_data
+.vmdk        $_zpm_mc_data

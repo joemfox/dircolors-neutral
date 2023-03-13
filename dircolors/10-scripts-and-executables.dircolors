@@ -1,15 +1,15 @@
 # Executables
-EXEC 33;01
+EXEC $_zpm_mc_app
 
 # Scripts & exec
-*.cmd       33
-*.exe       33
-*.com       33
-*.btm       33
-*.bat       33
-*.sh        33
-*.bash      33
-*.csh       33
-*.zsh       33
-*.zsh-theme 33
-*.fish      33
+*.cmd       $_zpm_mc_app
+*.exe       $_zpm_mc_app
+*.com       $_zpm_mc_app
+*.btm       $_zpm_mc_app
+*.bat       $_zpm_mc_app
+*.sh        $_zpm_mc_app
+*.bash      $_zpm_mc_app
+*.csh       $_zpm_mc_app
+*.zsh       $_zpm_mc_app
+*.zsh-theme $_zpm_mc_app
+*.fish      $_zpm_mc_app

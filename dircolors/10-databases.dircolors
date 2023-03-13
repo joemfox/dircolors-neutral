@@ -1,7 +1,7 @@
 # databases
-.sql 34
+.sql $_zpm_mc_data
 
-.db         35
-.sqlite3    35
-.sqlite     35
-.sqlite-wal 35
+.db         $_zpm_mc_data
+.sqlite3    $_zpm_mc_data
+.sqlite     $_zpm_mc_data
+.sqlite-wal $_zpm_mc_data
