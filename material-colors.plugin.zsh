@@ -34,54 +34,7 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
 }
 
 zstyle ':completion:*' list-dirs-first true
-# Zsh colors
-if [[ "$CLICOLOR" != '0' ]]; then
-  zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" 'ma=1;30;43'
-fi
 
-# GCC Colors
-GCC_COLORS=''
-GCC_COLORS+="error=${c[raw_bold]};${c[raw_red]}"
-GCC_COLORS+=":warning=${c[raw_bold]};${c[raw_yellow]}"
-GCC_COLORS+=":note=${c[raw_bold]};${c[raw_white]}"
-GCC_COLORS+=":caret=${c[raw_bold]};${c[raw_white]}"
-GCC_COLORS+=":locus=${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"
-GCC_COLORS+=":quote=${c[raw_bold]};${c[raw_yellow]}"
-
-export GCC_COLORS
-
-# Less Colors
-export LESS_TERMCAP_mb="${c[green]}"
-export LESS_TERMCAP_md="${c[bold]}${c[blue]}${c[bg_black]}"
-export LESS_TERMCAP_so="${c[bold]}${c[bg_yellow]}${c[black]}"
-export LESS_TERMCAP_us="${c[green]}"
-
-export LESS_TERMCAP_ue="${c[reset]}"
-export LESS_TERMCAP_me="${c[reset]}"
-export LESS_TERMCAP_se="${c[reset]}"
-
-# Grep Colors
-GREP_COLORS=''
-GREP_COLORS+=":mt=${c[raw_bold]};${c[raw_cyan]}"
-GREP_COLORS+=":ms=${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"
-GREP_COLORS+=":mc=${c[raw_bold]};${c[raw_bg_red]}"
-GREP_COLORS+=':sl='
-GREP_COLORS+=':cx='
-GREP_COLORS+=":fn=${c[raw_bold]};${c[raw_magenta]};${c[raw_bg_black]}"
-GREP_COLORS+=':ln=32'
-GREP_COLORS+=':bn=32'
-GREP_COLORS+=":se=${c[raw_bold]};${c[raw_cyan]};${c[raw_bg_black]}"
-
-export GREP_COLORS
-
-# Ag Colors
-function ag() {
-  command ag \
-    --color-path "${c[raw_bg_black]};${c[raw_bold]};${c[raw_magenta]}"      \
-    --color-match "${c[raw_bg_red]};${c[raw_bold]};${c[raw_black]}"         \
-    --color-line-number "${c[raw_bg_black]};${c[raw_bold]};${c[raw_green]}" \
-    $@
-}
 
 # FSH Colors
 zstyle :plugin:fast-syntax-highlighting theme "material"
@@ -114,7 +67,7 @@ FAST_HIGHLIGHT_STYLES[materialback-or-dollar-double-quoted-argument]=fg=cyan,bol
 FAST_HIGHLIGHT_STYLES[materialback-dollar-quoted-argument]=fg=cyan,bold
 FAST_HIGHLIGHT_STYLES[materialassign]=fg=blue,bold
 FAST_HIGHLIGHT_STYLES[materialredirection]=fg=magenta,bold
-FAST_HIGHLIGHT_STYLES[materialcomment]=fg=black,bold
+FAST_HIGHLIGHT_STYLES[materialcomment]=fg=8,bold
 FAST_HIGHLIGHT_STYLES[materialvariable]=fg=cyan,bold
 FAST_HIGHLIGHT_STYLES[materialmathvar]=fg=blue,bold
 FAST_HIGHLIGHT_STYLES[materialmathnum]=fg=magenta,bold
