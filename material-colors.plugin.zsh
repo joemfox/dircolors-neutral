@@ -4,6 +4,6 @@
 0="${${(M)0:#/*}:-$PWD/$0}"
 _DIRNAME="${0:h}"
 
-echo 'zpm-zsh/material-colors: This plugin is deprecated, please use zpm-zsh/theme-neutral instead.'
+echo 'zpm-zsh/material-colors: This plugin is deprecated, please use zpm-zsh/dircolors-neutral instead.'
 
-source "${_DIRNAME}/theme-neutral.plugin.zsh"
+source "${_DIRNAME}/dircolors-neutral.plugin.zsh"
