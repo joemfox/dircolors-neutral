@@ -1,5 +1,7 @@
 # Themes for some cli apps
 
+![Screen](./screen.png)
+
 Supported apps:
 
 - dircolors
