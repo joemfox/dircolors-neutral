@@ -8,7 +8,7 @@
 .deny  31
 
 # Keys
-*id_dsa     $_zpm_mc_secret
-*id_rsa     $_zpm_mc_secret
-*id_ecdsa   $_zpm_mc_secret
-*id_ed25519 $_zpm_mc_secret
+*id_dsa     31
+*id_rsa     31
+*id_ecdsa   31
+*id_ed25519 31

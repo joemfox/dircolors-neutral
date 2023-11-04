@@ -24,11 +24,9 @@ source "${DIRCOLORS_CACHE_FILE}" 2>/dev/null || {
     COMMAND="gdircolors"
   fi
 
-  source "${_DIRNAME}/dircolors/colors.sh"
-
   for file in "${_DIRNAME}/dircolors/"*.dircolors; do
     cat "$file"
-  done | envsubst  | $COMMAND - > "${DIRCOLORS_CACHE_FILE}"
+  done | $COMMAND - > "${DIRCOLORS_CACHE_FILE}"
 
   source "${DIRCOLORS_CACHE_FILE}"
 }

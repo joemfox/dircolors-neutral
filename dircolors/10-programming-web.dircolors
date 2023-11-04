@@ -33,5 +33,5 @@
 *.d.ts 2;33
 *.flow 2;33
 
-*.cson $_zpm_mc_config
-*.json $_zpm_mc_config
+*.cson 34
+*.json 34

@@ -1,12 +1,12 @@
 # Configs
-.cfg  $_zpm_mc_config
-.cnf  $_zpm_mc_config
-.conf $_zpm_mc_config
-.ini  $_zpm_mc_config
+.cfg  34
+.cnf  34
+.conf 34
+.ini  34
 
 # Special configs
-*Gemfile     $_zpm_mc_config
-*Rakefile    $_zpm_mc_config
-*Makefile    $_zpm_mc_config
-*Cargo.toml  $_zpm_mc_config
-*Vagrantfile $_zpm_mc_config
+*Gemfile     34
+*Rakefile    34
+*Makefile    34
+*Cargo.toml  34
+*Vagrantfile 34
