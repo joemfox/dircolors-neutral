@@ -11,3 +11,4 @@
 .enc       31
 .sig       31
 .p7s       31
+.keystore  31

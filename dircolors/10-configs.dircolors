@@ -1,12 +1,7 @@
 # Configs
-.cfg  34
-.cnf  34
-.conf 34
-.ini  34
-
-# Special configs
-*Gemfile     34
-*Rakefile    34
-*Makefile    34
-*Cargo.toml  34
-*Vagrantfile 34
+.cfg        36
+.cnf        36
+.conf       36
+.ini        36
+.properties 36
+.pro        36

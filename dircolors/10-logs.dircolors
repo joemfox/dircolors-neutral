@@ -6,3 +6,7 @@
 *.mysql_history      2;37
 *.zsh_history        2;37
 *.autoenv_authorized 2;37
+
+# Pacman
+*.pacnew  2;37
+*.pacsave 2;37
