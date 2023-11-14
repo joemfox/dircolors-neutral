@@ -78,13 +78,6 @@
 *hosts.allow 32
 *hosts.deny  31
 
-# Keys
-*id_dsa     31
-*id_rsa     31
-*id_ecdsa   31
-*id_ed25519 31
-
-
 # Systemd
 # http://www.freedesktop.org/software/systemd/man/systemd.unit.html
 *.service   34
