@@ -20,16 +20,28 @@
 
 
 # Keys
-*id_dsa        31
-*id_rsa        31
-*id_ecdsa      31
-*id_ecdsa_sk   31
-*id_ed25519    31
-*id_ed25519_sk 31
+*id_dsa          31
+*id_dsa.*        31
+*id_rsa          31
+*id_rsa.*        31
+*id_ecdsa        31
+*id_ecdsa.*      31
+*id_ecdsa_sk     31
+*id_ecdsa_sk.*   31
+*id_ed25519      31
+*id_ed25519.*    31
+*id_ed25519_sk   31
+*id_ed25519_sk.* 31
 
-*id_dsa.pub        31
-*id_rsa.pub        31
-*id_ecdsa.pub      31
-*id_ecdsa_sk.pub   31
-*id_ed25519.pub    31
-*id_ed25519_sk.pub 31
+*id_dsa.pub          31
+*id_dsa.*.pub        31
+*id_rsa.pub          31
+*id_rsa.*.pub        31
+*id_ecdsa.pub        31
+*id_ecdsa.*.pub      31
+*id_ecdsa_sk.pub     31
+*id_ecdsa_sk.*.pub   31
+*id_ed25519.pub      31
+*id_ed25519.*.pub    31
+*id_ed25519_sk.pub   31
+*id_ed25519_sk.*.pub 31
