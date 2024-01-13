@@ -24,3 +24,6 @@ Add `antigen bundle zpm-zsh/theme-neutral` into `.zshrc`
 ### Using [zgen](https://github.com/tarjoilija/zgen)
 
 Add `zgen load zpm-zsh/theme-neutral` into `.zshrc`
+
+
+## You need to setup terminal emulator colorscheme, for example [terminal-colorscheme-neutral](https://github.com/zpm-zsh/terminal-colorscheme-neutral)
